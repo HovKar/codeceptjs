@@ -15,5 +15,5 @@ When('I fill the name field with {string}', (name) => {
 
 Then('The name field should contain the value {string}', async(expectedValue) => {
   const actualValue = I.grabValueFrom('#name');
-  expect(await I.grabValueFrom('#name')).to.equal('John')
+  expect(await I.grabValueFrom('#name')).to.equal(expectedValue)
 });
